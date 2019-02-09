@@ -1,3 +1,9 @@
 * {
-    padding: 10px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+
+#submit-button {
+    margin-top: 5px;
 }
