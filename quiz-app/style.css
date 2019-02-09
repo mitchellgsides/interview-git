@@ -1,75 +1,157 @@
 * {
-    text-align: center;
+    text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    list-style-type: none;
-    padding: 2px;
-    background-image: url();
-    background-size: cover;
-    box-sizing: border-box;
+    color: whitesmoke;
 }
 
 
-/* these are my divs for showing/hiding each different page */
+body {
+    background: url('../quiz-app/Elevate-reduced.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+}
 
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.23);
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    font-size: 15px;
+}
+
+h1 {
+    color: darkred;
+    text-align: center;
+}
 
 .start-page {
-    height: 300px;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-
+    text-align: center;
+    background-color: rgba(0, 0, 0, .6);
+    border-radius: 20px;
+    margin: 7%;
+    padding: 5px;
 }
 
-.start-page > button {
-    width: auto;
-
+.start-page p {
+    text-align: center;
 }
+
+button {
+  background-color: darkred; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+button:hover {
+    background-color: darkred;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
 
 .quiz-pages {
-    height: 300px;
     display: none;
-    flex-direction: row;
-    justify-content: center;
-    width: auto;
+    margin: 7%;
+    width: 80%;
+    align-content: space-between;
+    justify-content: space-evenly;
+    
 }
 
-.quiz-pages form {
+.quiz-form {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.quiz-pages legend {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+    
+}
+
+.quiz-pages fieldset {
     display: flex;
     flex-direction: column;
-    width: auto;
+    border: 0px;
+    padding: 0px;
+
 }
 
-.quiz-pages form > fieldset {
-    display: flex;
-    flex-direction: column;
+button.submitButton {
+    margin: auto;
+    margin-top: 10px;
+
 }
 
-.answer-pages {
-    height: 300px;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    height: 300px;
+.next-question {
+    margin: auto; 
+    padding: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    padding: 10px;
 }
 
-.answer-pages button {
-    width: auto;
+.answer-pages, .next-question {
+    margin: 7%;
+    width: 80%;
+    align-content: space-between;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    padding: 10px;
 }
 
 .finish-page {
     display: none;
-    flex-direction: column;
-    justify-content: center;
-    height: 300px;
+    margin: 7%;
+    width: 80%;
+    align-content: space-between;
+    justify-content: space-evenly;
 }
-/*end page divs */
+
+#your-score {
+    padding: 10px;
+}
 
 footer > ul {
+    font-size: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
     display: flex;
+    list-style-type: none;
     justify-content: space-between;
 }
 
-input[type=radio] {
-    color: red;
+footer > ul > li {
+    background-color: rgba(0, 0, 0, .5);
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+footer > ul > li > span{
+    color: whitesmoke;
 }

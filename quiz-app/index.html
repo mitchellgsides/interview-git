@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
 <body>
+<div class="container">
     <header role="banner">
             <div name="start-page">
                     <h1>Anatomy & Exercise Physiology Quiz</h1>
@@ -25,7 +26,7 @@
         <div class="quiz-pages">
            <form class="quiz-form">
                 <fieldset>
-                    <legend><h3 id="question-text">Question:</h3></legend>
+                    <legend><span id="question-text">Question:</span></legend>
                     <label class="answerOption">
                         <input type="radio" value="Answer1" name="answer" id="Answer1" required>
                         <span id="answer-choice-1"></span>
@@ -49,13 +50,13 @@
 
            <div class="answer-pages">
                 <div class="correct-page">
-                    <p>You are correct!</p>
+                    <p class="correct-answer-is"></p>
                 </div>
 
                 <div class="incorrect-page">
                     <p id="correct-answer-is"></p>
                 </div>
-                <button type='button' class='next-question'><span id='next-question-button'>NextQuestion</span></button>
+                <button type='button' class='next-question'><p id='next-question-button'>Next Question</p></button>
            </div>
 
            <div class="finish-page">
@@ -72,5 +73,6 @@
     </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="app.js"></script>
+  </div>
 </body>
 </html>
