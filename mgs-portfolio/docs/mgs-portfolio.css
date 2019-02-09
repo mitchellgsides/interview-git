@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  color: rgb(230, 230, 230, 0.7);
+  box-sizing: border-box;
+}
+
+* h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 44px;
+}
+
+
+title {
+  display: none;
+}
+
+html {
+  background-color: rgba(0, 0, 0, 0.90);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+nav, footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(#d32f2f, #F44336);
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: bold;
+}
+
+footer {
+  /*background-image: linear-gradient(#f44336, #d32f2f);*/
+  justify-content: space-around;
+}
+
+nav ul, footer ul {
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+nav ul li, footer ul li {
+  list-style-type: none;
+  padding: 7px;
+  text-decoration: none;
+}
+
+#hero {
+  background-color: rgb(0, 0, 0, 0.4);
+  padding: 5%;
+  height: 200px;
+}
+
+#hero h3 {
+  color: white;
+}
+
+.hero-container {
+  background-image: url();
+  background-size: cover;
+}
+
+section ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 14px;
+}
+
+
+section h1, footer h1 {
+  font-size: 24px;
+  padding: 10px;
+}
+
+section h1 {
+  background-color: #d32f2f;
+}
+
+section ul li {
+  padding: 10px;
+}
+
+
+#about-me h1 {
+  background-color: #f44336;
+}
+
+#about-me p {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}

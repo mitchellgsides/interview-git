@@ -1,0 +1,6 @@
+Google Maps API Key:
+AIzaSyAkU0xk19LxOW-NjNLR6cdPQjq0dsC9-V8
+
+
+News API Key: 
+a4f5f321a1f042668f1a19f3c0f77dd3
